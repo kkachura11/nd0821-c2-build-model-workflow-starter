@@ -27,8 +27,8 @@ def go(args):
     df = df[idx].copy()
 
     logger.info("Drop the outliers in geolocation")
-    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
-    df = df[idx].copy()
+    idx1 = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx1].copy()
 
     logger.info("Save results")
     filename = "clean_sample.csv"
