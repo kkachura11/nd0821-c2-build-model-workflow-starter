@@ -6,7 +6,6 @@ import scipy.stats
 def test_column_names(data):
 
     expected_colums = [
-        "Unnamed: 0",
         "id",
         "name",
         "host_id",
